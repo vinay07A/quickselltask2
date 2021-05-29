@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+
+.counter-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.counter-details{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 4px solid rgb(206, 95, 95);
+    border-width: thin;
+    border-radius: 10px;
+    height: 50px;
+    margin: 10px 0px 6px 0px;
+}
+
+.counter-button-left{
+    width: 60px;
+    text-align: center;
+    align-self: center;
+    border-right: 1px solid  rgb(206, 95, 95);
+    cursor: pointer;
+    color: rgb(170, 72, 72);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.counter-button-right{
+    width: 60px;
+    text-align: center;
+    align-self: center;
+    border-left: 1px solid  rgb(206, 95, 95);
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    cursor: pointer;
+    background-color: rgb(170, 72, 72);
+    color: white;
+    font-weight: bold;
+}
+
+.counter-input{
+    width: 60px;
+    align-self: center;
+    background-color: rgb(231, 211, 203);
+}
+
+.counter-loading{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.counter-display{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    border: 0;
+    width: 50px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(231, 211, 203)
+  }
+
+input:focus{
+    outline: none;
+}

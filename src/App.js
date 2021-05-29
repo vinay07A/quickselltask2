@@ -11,14 +11,12 @@ const App = () =>{
 
   useEffect(()=>{
     console.log("call get counter api");
-    setTimeout(() => {
-      fetch('https://interview-8e4c5-default-rtdb.firebaseio.com/front-end/counterValue.json')
-        .then(response => response.json())
-        .then(data => {
-          data !=null ? setCounterValue(data) : setCounterValue(1);
-          setIsDataReady(true);
-        });
-    }, 1000);
+    fetch('https://interview-8e4c5-default-rtdb.firebaseio.com/front-end/counterValue.json')
+      .then(response => response.json())
+      .then(data => {
+        data !=null ? setCounterValue(data) : setCounterValue(1);
+        setIsDataReady(true);
+      });
   },[])
 
   async function updateValue(value){
